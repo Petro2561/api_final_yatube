@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404
-from posts.models import Group, Post, User
-from rest_framework import mixins, filters, viewsets
+from posts.models import Group, Post
+from rest_framework import filters, mixins, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 
 from .permissions import IsAuthOnly, IsAuthorOrReadOnly
